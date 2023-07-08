@@ -1,0 +1,8 @@
+docker build -t hariharavarshan/jobskills:0.0.1.RELEASE .
+docker container run -d -p 5000:5000 hariharavarshan/jobskills:0.0.1.RELEASE
+docker container ls
+docker save jobskills > jobskills.tar
+docker container stop 0f8
+docker push hariharavarshan/jobskills:0.0.1.RELEASE
+
+>docker pull hariharavarshan/jobskills:0.0.1.RELEASE
